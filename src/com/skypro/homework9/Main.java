@@ -46,16 +46,16 @@ public class Main {
     private static void task3() {
         System.out.println("\n\nTask 3");
         int[] arr = generateRandomArray();
-        int sum = 0;
-        for (int element : arr) {
+        double sum = 0;
+        for (double element : arr) {
             sum += element;
         }
         double averageSum = sum / arr.length;
-        System.out.println("The average amount of spent per month was " + averageSum + " rub.");
+        System.out.printf("The average amount of spent per month was %.2f rub.",averageSum);
     }
 
     private static void task4() {
-        System.out.println("\nTask 4");
+        System.out.println("\n\nTask 4");
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
